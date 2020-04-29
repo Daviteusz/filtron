@@ -13,9 +13,9 @@ import (
 const VERSION string = "0.1.0"
 
 func main() {
-	target := flag.String("target", "127.0.0.1:8888", "Target address for reverse proxy")
-	listen := flag.String("listen", "127.0.0.1:4004", "Proxy listen address")
-	apiAddr := flag.String("api", "127.0.0.1:4005", "API listen address")
+	target := flag.String("target", "127.0.0.1:62017", "Target address for reverse proxy")
+	listen := flag.String("listen", "127.0.0.1:8926", "Proxy listen address")
+	apiAddr := flag.String("api", "127.0.0.1:83834", "API listen address")
 	ruleFile := flag.String("rules", "rules.json", "JSON rule list")
 	readBufferSize := flag.Int("read-buffer-size", 16*1024, "Read buffer size")
 	printVersionInfo := flag.Bool("version", false, "Version information")
